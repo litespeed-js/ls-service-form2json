@@ -30,15 +30,15 @@ The form2json service uses each form element name attribute as a key for the out
 
 ### Arrays & Objects
 
-The form2json service uses FIELDSET tag to wrap a set of primitives as an object. When multiple form elements has the same name attribute the will be joined into an array. If you wish to force an array casting for single elements who have unique name attribute, add the data-cast-to="array" attribute to the required form element.
+The form2json service uses a FIELDSET tag to wrap a set of primitives as an object. When multiple form elements have the same name attribute the will be joined into an array. If you wish to force an array casting for single elements who have a unique name attribute, add the data-cast-to="array" attribute to the required form element.
 
 ### Data Casting
 
-The form2json service is trying to cast HTML form elements to their most suitable var types. For example, number or range input elements will be converted to into integers, while text or search input elements will be converted to strings. To force a specific type use the data-cast-to="array" on your HTML element. The *data-cast-to* attribute accepts this values: string, int, integer, bool, boolean, array and json. The JSON type converts a resulting form object (FIELDSET tag) to a JSON string.
+The form2json service is trying to cast HTML form elements to their most suitable var types. For example, number or range input elements will be converted to into integers, while text or search input elements will be converted to strings. To force a specific type use the data-cast-to="array" on your HTML element. The *data-cast-to* attribute accepts these values: string, int, integer, bool, boolean, array, and JSON. The JSON type converts a resulting form object (FIELDSET tag) to a JSON string.
 
 ### Radio & Checkbox
 
-Note that radio button elements can only be true or false and are casted to boolean values. Checkbox elements are automatically casted at an array list.
+Note that radio button elements can only be true or false and are cast to boolean values. Checkbox elements are automatically cast to an array list.
 
 ### Example
 
