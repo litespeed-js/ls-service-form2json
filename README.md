@@ -51,6 +51,13 @@ This basic form:
 </form>
 ```
 
+```js
+let form = document.getElementById('unique');
+let form2json = window.ls.container.get('form2json');
+
+return form2json.toJson(form);
+```
+
 Will result to this JSON:
 ```json
 {
@@ -67,17 +74,24 @@ This form:
 
     <fieldset name="language">
         <input type="text" name="name" value="PHP" />
-        <input type="text" name="url" value="https://www.php.net/" />
+        <input type="text" name="link" value="https://www.php.net/" />
     </fieldset>
     <fieldset name="language">
         <input type="text" name="name" value="NodeJS" />
-        <input type="text" name="url" value="https://nodejs.org/en/" />
+        <input type="text" name="link" value="https://nodejs.org/en/" />
     </fieldset>
     <fieldset name="language">
         <input type="text" name="name" value="Ruby" />
-        <input type="text" name="url" value="https://www.ruby-lang.org/en/" />
+        <input type="text" name="link" value="https://www.ruby-lang.org/en/" />
     </fieldset>
 </form>
+```
+
+```js
+let form = document.getElementById('unique');
+let form2json = window.ls.container.get('form2json');
+
+return form2json.toJson(form);
 ```
 
 Will result to this JSON including a list of objects:
@@ -85,11 +99,11 @@ Will result to this JSON including a list of objects:
 {
     "title": "Coding Languages",
     "language": [
-        { "name": "PHP", url: "https://www.php.net/"},
-        { "name": "NodeJS", url: "https://nodejs.org/en/"},
-        { "name": "Ruby", url: "https://www.ruby-lang.org/en/"}
-        ]
-    }
+        { "name": "PHP", "link": "https://www.php.net/"},
+        { "name": "NodeJS", "link": "https://nodejs.org/en/"},
+        { "name": "Ruby", "link": "https://www.ruby-lang.org/en/"}
+    ]
+}
 ```
 
 [For more examples visit our jest test file](/tests/form2json.test.js)
