@@ -36,9 +36,9 @@ The form2json service uses a FIELDSET tag to wrap a set of primitives as an obje
 
 The form2json service is trying to cast HTML form elements to their most suitable var types. For example, number or range input elements will be converted to into integers, while text or search input elements will be converted to strings. To force a specific type use the data-cast-to="array" on your HTML element. The *data-cast-to* attribute accepts these values: string, int, integer, bool, boolean, array, and JSON. The JSON type converts a resulting form object (FIELDSET tag) to a JSON string.
 
-### Radio & Checkbox
+### Checkboxes
 
-Note that radio button elements can only be true or false and are cast to boolean values. Checkbox elements are automatically cast to an array list.
+Checkbox elements are automatically cast to an array list of checked values.
 
 ### Example
 
