@@ -1,0 +1,33 @@
+{
+    "name": "ls-service-form2json",
+    "version": "v1.0.0",
+    "private": false,
+    "main": "src/form2json.js",
+    "description": "Litespeed.js service component that converts an HTML form element to a valid JSON object.",
+    "homepage": "https://github.com/litespeed-js/ls-service-form2json",
+    "bugs": "https://github.com/litespeed-js/ls-service-form2json/issues",
+    "license": "MIT",
+    "jsdelivr": "src/form2json.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/litespeed-js/ls-service-form2json.git"
+    },
+    "keywords": [
+        "litespeed",
+        "framework",
+        "lite",
+        "speed",
+        "lightspeed",
+        "light",
+        "javascript"
+    ],
+    "dependencies": {
+        "litespeed.js": "^0.3.6"
+    },
+    "devDependencies": {
+        "jest": "^24.8.0"
+    },
+    "scripts": {
+        "test": "jest tests"
+    }
+}
